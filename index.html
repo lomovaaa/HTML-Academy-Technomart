@@ -12,10 +12,8 @@
       <img src="img/logo_technomart.svg" width="108" height="18" alt="Логотип сайта магазина Техномарт">
     </a>
     <form action="https://echo.htmlacademy.ru/courses" method="GET">
-      <label>
-        Поиск:
-        <input type="searh" name="search">
-      </label>
+      <label for="search" class="visually-hidden">Поиск</label>
+      <input id="search" type="search" name="search" placeholder="Поиск:">
     </form>
     <a href="">Закладки</a>
     <a href="">Корзина</a>
@@ -76,8 +74,8 @@
 
         <div>
           <!--Пока оставляю содержимое кнопки, уберу после применения стилей-->
-          <button type="button" aria-label="к первому слайду">1</button>
-          <button type="button" aria-label="ко второму слайду">2</button>
+          <button type="button" aria-label="к предыдущему слайду">1</button>
+          <button type="button" aria-label="к следующему слайду">2</button>
         </div>
 
         <!--Пока оставляю содержимое кнопки, уберу после применения стилей-->
@@ -102,25 +100,25 @@
       <ol>
         <li>
           <h3>Перфоратор BOSCH BFG 9000</h3>
-          <img src="img/bosch_bfg_9000.jpg" width="220" height="318">
+          <img src="img/bosch_bfg_9000.jpg" width="220" height="318" alt="">
           <del>30500 Р.</del>
           <p>25500 Р.</p>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 3000</h3>
-          <img src="img/bosch_bfg_3000.jpg" width="220" height="318">
+          <img src="img/bosch_bfg_3000.jpg" width="220" height="318" alt="">
           <del>25500 Р.</del>
           <p>15500 Р.</p>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <img src="img/bosch_bfg_6000.jpg" width="220" height="318">
+          <img src="img/bosch_bfg_6000.jpg" width="220" height="318" alt="">
           <del>30500 Р.</del>
           <p>25500 Р.</p>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <img src="img/bosch_bfg_3000.jpg" width="220" height="318">
+          <img src="img/bosch_bfg_3000.jpg" width="220" height="318" alt="">
           <p>12500 Р.</p>
         </li>
       </ol>
@@ -294,7 +292,7 @@
 
   </footer>
 
-  <section>
+  <div>
     <h2 class="visually-hidden">Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru/courses" method="POST">
       <label>
@@ -308,22 +306,22 @@
       <br>
       <label>
         Текст письма:
-        <textarea name="text_message" placeholder="В свободной форме" required></textarea>
+        <textarea name="text-message" placeholder="В свободной форме" required></textarea>
       </label>
       <button type="submit">Отправить</button>
     </form>
     <!--Пока оставляю содержимое кнопки ("Закрыть"), уберу после применения стилей-->
     <button type="button" aria-label="Закрыть">Закрыть</button>
-  </section>
+  </div>
 
-  <section>
+  <div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1162.9200147702647!2d30.322769353349916!3d59.93850159407343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1590234269435!5m2!1sru!2sru"
-      width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0">Карта</iframe>
+      width="943" height="449" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
     <!--Пока оставляю содержимое кнопки ("Закрыть"), уберу после применения стилей-->
     <button type="button" aria-label="Закрыть">Закрыть</button>
-  </section>
+  </div>
 
 </body>
 
