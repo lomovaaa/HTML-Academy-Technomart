@@ -61,8 +61,7 @@
             <li><a href="">Инструмент</a></li>
             <li><a href="">Перфораторы</a></li>
         </ul>
-
-        <form>
+        <div>
             <h2>Сортировка:</h2>
             <ul>
                 <li><a href="">По цене</a></li>
@@ -70,11 +69,10 @@
                 <li><a href="">По функционалу</a></li>
             </ul>
             <div>
-                <a href="">По возрастанию</a>
-                <a href="">По убыванию</a>
+                <a href="" aria-label="По возрастанию">По возрастанию</a>
+                <a href="" aria-label="По убыванию">По убыванию</a>
             </div>
-
-        </form>
+        </div>
 
         <form>
             <h2>Фильтр:</h2>
@@ -86,24 +84,28 @@
                     <legend>Производители:</legend>
                     <ul>
                         <li>
-                            <input id="filter-manufacturer-bosch" type="checkbox" name="bosch-field" checked>
+                            <input id="filter-manufacturer-bosch" type="checkbox" value="bosch" name="bosch-field"
+                                checked>
                             <label for="filter-manufacturer-bosch">Bosch</label>
                         </li>
                         <li>
-                            <input id="filter-manufacturer-interskol" type="checkbox" name="interskol-field">
+                            <input id="filter-manufacturer-interskol" type="checkbox" value="interskol"
+                                name="interskol-field">
                             <label for="filter-manufacturer-interskol">Интерскол</label>
                         </li>
                         <li>
-                            <input id="filter-manufacturer-makita" type="checkbox" name="makita-field" checked>
+                            <input id="filter-manufacturer-makita" type="checkbox" value="makita" name="makita-field"
+                                checked>
                             <label for="filter-manufacturer-makita">Makita</label>
                         </li>
                         <li>
-                            <input id="filter-manufacturer-dewalt" type="checkbox" name="dewalt-field">
+                            <input id="filter-manufacturer-dewalt" type="checkbox" value="dewalt" name="dewalt-field">
                             <label for="filter-manufacturer-dewalt">Dewalt</label>
                         </li>
                         <li>
 
-                            <input id="filter-manufacturer-hitachi" type="checkbox" name="hitachi-field">
+                            <input id="filter-manufacturer-hitachi" type="checkbox" value="hitachi"
+                                name="hitachi-field">
                             <label for="filter-manufacturer-hitachi">Hitachi</label>
                         </li>
                     </ul>
@@ -263,7 +265,7 @@
         <!--Пока оставляю содержимое кнопки ("Закрыть"), уберу после применения стилей-->
         <button type="button" aria-label="Закрыть">Закрыть</button>
         <p>Товар добавлен в корзину</p>
-        <button type="submit">Оформить заказ</button>
+        <a href="">Оформить заказ</a>
         <button type="button">Продолжить покупки</button>
     </div>
 
