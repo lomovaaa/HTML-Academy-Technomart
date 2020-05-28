@@ -1,0 +1,274 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey-light:#32425C;
+    --basic-grey-dark:#293449;
+    --grey-light: #C5C5C5;
+    --grey-background: #F1F5F7;
+    --white-background: #FFFFFF;
+    --grey-text: #F3F7F9;
+  
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-green-light: #8ED78F;
+    --special-yellow-light: #FFD180;
+
+    --white: #FFFFFF;
+    --black-text: #000000;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+    --gradient: #EAEAEA;
+  }
+
+  a {text-decoration: none;}
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+body {
+  font-family: 'Cuprum', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+  .header {
+      background-color: var(--grey-background);
+  }
+
+  .header-with-logo {
+    background-color: var(--basic-grey-dark);
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .header-with-logo a {
+    color: var(--white-background);
+  }
+
+  .header-with-logo a:last-child {
+    background-color: var(--basic-green);
+  }
+
+  .shop-name {
+    font-weight: normal;
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .address-header {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .address-header a {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+  }
+
+  .not-user-nav a {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--black-text);
+    background-color: var(--white-background);
+  }
+
+  .main-nav {
+    background-color: var(--basic-grey-light);
+  }
+
+  .main-nav a {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+  }
+
+  .main-nav ul {
+    list-style: none;
+  }
+
+   /*Mane page*/
+  .company-technomart, .contacts {
+    color: var(--black-text);
+  }
+
+  .company-technomart h2,
+  .contacts h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+  } 
+
+  .company-technomart p,
+  .contacts p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .transport-companies {
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+    background-color: var(--white);
+  }
+
+  .button-main-page {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--white);
+    background-color: var(--basic-red);
+}
+
+/*Catalog*/
+.cart {
+  background-color: var(--basic-red);
+}
+.authorized-user p {
+  background-color: var(--white);
+}
+
+.authorized-user p>a {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black-text);
+}
+.user-nav {
+  list-style: none;
+}
+.user-nav a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey-light);
+}
+
+.h1-catalog {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-grey-light);
+  background-color: var(--grey-background);
+}
+
+.path-catalog {
+  list-style: none;
+}
+.path-catalog a {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color:var(--black-text);
+  text-transform: uppercase;
+}
+
+.filters {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+
+.filter legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.item-list ul {
+  list-style: none;
+}
+
+.item {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.item h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.old-price {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.new-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--white);
+  background-image: url(../img/red_button.svg);
+}
+
+
+  /*Footer*/
+  .footer-top {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: var(--basic-grey-light);
+  }
+
+  .footer-general-nav,
+  .footer-catalog-nav {
+    list-style: none;
+  }
+
+  .address-footer, 
+  .address-footer a, 
+  .footer-general-nav a {
+    font-style: normal;
+    color:var(--grey-text);
+  }
+
+  .footer-catalog-nav a,
+  .footer-down a {
+    color: var(--special-yellow-light);
+  }
+
+
+  .footer-down {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+    background-color: var(--basic-grey-dark);
+  }
+
+  .social ul {
+    list-style: none;
+  }
+
+  .modal-write-us, 
+  .modal-map,
+  .modal-added-to-cart {
+    display: none;
+  }
+
+
