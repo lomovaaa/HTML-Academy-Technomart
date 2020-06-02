@@ -53,30 +53,31 @@
   </header>
 
   <main>
-    <section>
-      <p>
+    <section class="category">
+      <p class="category-material">
         Материалы
-        <a href="">На любой вкус</a>
+        <a class="button category-button" href="">На любой вкус</a>
       </p>
-      <p>
+      <p class="category-tool">
         Инстурмент
-        <a href="">На все случаи</a>
+        <a class="button category-button" href="">На все случаи</a>
       </p>
-      <p>
+      <p class="category-equipment">
         Техника
-        <a href="">Для стройки</a>
+        <a class="button category-button" href="">Для стройки</a>
       </p>
-      <div>
+
+      <div classs="slider">
         <div>
-          <div>
-            <h2>Перфораторы</h2>
+          <div class="slider-pic slider-perforator">
+            <h2 class="slider-title">Перфораторы</h2>
             <p>Настоящие мужские игрушки</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a class="button" href="catalog.html">Открыть каталог</a>
           </div>
-          <div>
-            <h2>Дрели</h2>
+          <div class="slider-pic slider-drill">
+            <h2 class="slider-title">Дрели</h2>
             <p>Соседям на радость</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a class="button" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
 
@@ -90,54 +91,55 @@
         <button type="button" aria-label="Вправо">Вправо</button>
         <button type="button" aria-label="Влево">Влево</button>
       </div>
-      <p>
+
+      <p class="category-sale">
         Скидки 50%
-        <a href="">На 350 товаров</a>
+        <a class="button category-button" href="">На 350 товаров</a>
       </p>
-      <p>
+      <p class="category-delivery">
         Доставка
-        <a href="">Бесплатно</a>
+        <a class="button category-button" href="">Бесплатно</a>
       </p>
     </section>
 
-    <section>
-      <div>
-        <h2>Популярные товары</h2>
-        <a href="">Все популярные товары</a>
+    <section class="popular popular-item">
+      <div class="popular-title">
+        <h2 class="block-title">Популярные товары</h2>
+        <a class="button" href="">Все популярные товары</a>
       </div>
-      <ol>
+      <ol class="popular-item-list">
         <li>
-          <h3>Перфоратор BOSCH BFG 9000</h3>
+          <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
           <img src="img/bosch_bfg_9000.jpg" width="220" height="318" alt="">
-          <del>30500 Р.</del>
-          <p>25500 Р.</p>
+          <del class="catalog-item-old-price">30500 Р.</del>
+          <p class="catalog-item-price">25500 Р.</p>
         </li>
         <li>
-          <h3>Перфоратор BOSCH BFG 3000</h3>
+          <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
           <img src="img/bosch_bfg_3000.jpg" width="220" height="318" alt="">
-          <del>25500 Р.</del>
-          <p>15500 Р.</p>
+          <del class="catalog-item-old-price">25500 Р.</del>
+          <p class="catalog-item-price">15500 Р.</p>
         </li>
         <li>
-          <h3>Перфоратор BOSCH BFG 6000</h3>
+          <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
           <img src="img/bosch_bfg_6000.jpg" width="220" height="318" alt="">
-          <del>30500 Р.</del>
-          <p>25500 Р.</p>
+          <del class="catalog-item-old-price">30500 Р.</del>
+          <p class="catalog-item-price">25500 Р.</p>
         </li>
         <li>
-          <h3>Перфоратор BOSCH BFG 2000</h3>
+          <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
           <img src="img/bosch_bfg_3000.jpg" width="220" height="318" alt="">
-          <p>12500 Р.</p>
+          <p class="catalog-item-price">12500 Р.</p>
         </li>
       </ol>
     </section>
 
-    <section>
-      <div>
-        <h2>Популярные производители</h2>
-        <a href="">Все производители</a>
+    <section class="popular popular-manufacturer">
+      <div class="popular-title">
+        <h2 class="block-title">Популярные производители</h2>
+        <a class="button" href="">Все производители</a>
       </div>
-      <ul>
+      <ul class="popular-manufacturer-list">
         <li>
           <a href="">
             <img src="img/bosch.png" width="220" height="145" alt="Логотип производителя BOSCH">
@@ -181,27 +183,27 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Сервисы</h2>
+    <section class="service">
+      <h2 class="block-title">Сервисы</h2>
       <p>
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul>
-        <li><button type="submit">Доставка</button></li>
-        <li><button type="submit">Гарантия</button></li>
-        <li><button type="submit">Кредит</button></li>
+      <ul class="service-list">
+        <li><button class="service-button" "type="submit">Доставка</button></li>
+        <li><button class="service-button" type="submit">Гарантия</button></li>
+        <li><button class="service-button" type="submit">Кредит</button></li>
       </ul>
-      <ul>
+      <ul class="service-detailed-list">
         <li>
-          <h2>Доставка</h2>
+          <h2 class="block-title service-title">Доставка</h2>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж!
           </p>
         </li>
         <li>
-          <h2>Гарантия</h2>
+          <h2 class="block-title service-title">Гарантия</h2>
           <p>
             Если купленный у нас товар поломается или заискрит,
             а также в случае пожара, спровоцированного его
@@ -211,7 +213,7 @@
           </p>
         </li>
         <li>
-          <h2>Кредит</h2>
+          <h2 class="block-title service-title">Кредит</h2>
           <p>
             Залезть в долговую яму стало проще!
             Кредитные консультанты придут вам на помощь.
