@@ -17,12 +17,12 @@
             <a class="header-logo" href="index.html">
                 <img src="img/logo_technomart.svg" width="108" height="18" alt="Логотип сайта магазина Техномарт">
             </a>
-            <form action="https://echo.htmlacademy.ru/courses" method="GET">
+            <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="GET">
                 <label for="search" class="visually-hidden">Поиск</label>
                 <input id="search" type="search" name="search" placeholder="Поиск:">
             </form>
             <a class="header-bookmarks" href="">Закладки: 0</a>
-            <a class="header-cart" href="">Корзина: 10</a>
+            <a class="header-cart header-cart-user" href="">Корзина: 10</a>
             <a class="header-order" href="">Оформить заказ</a>
         </div>
         <p class="header-description">
@@ -71,9 +71,9 @@
         <div class="catalog-sorter">
             <h2 class="catalog-sorter-title">Сортировка:</h2>
             <ul class="catalog-sorter-list">
-                <li><a href="">По цене</a></li>
-                <li><a href="">По типу</a></li>
-                <li><a href="">По функционалу</a></li>
+                <li><a class="catalog-sorter-field" href="">По цене</a></li>
+                <li><a class="catalog-sorter-field" href="">По типу</a></li>
+                <li><a class="catalog-sorter-field" href="">По функционалу</a></li>
             </ul>
             <div>
                 <a href="" aria-label="По возрастанию">По возрастанию</a>
@@ -81,7 +81,7 @@
             </div>
         </div>
 
-        <form class="catalog-filter">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/courses" method="GET">
             <h2 class="catalog-filter-title">Фильтр:</h2>
             <div>
                 <h3>Цена:</h3>
@@ -93,27 +93,27 @@
                         <li>
                             <input id="filter-manufacturer-bosch" type="checkbox" value="bosch" name="bosch-field"
                                 checked>
-                            <label for="filter-manufacturer-bosch">Bosch</label>
+                            <label class="filter-manufacturer-type" for="filter-manufacturer-bosch">Bosch</label>
                         </li>
                         <li>
                             <input id="filter-manufacturer-interskol" type="checkbox" value="interskol"
                                 name="interskol-field">
-                            <label for="filter-manufacturer-interskol">Интерскол</label>
+                            <label class="filter-manufacturer-type" for="filter-manufacturer-interskol">Интерскол</label>
                         </li>
                         <li>
                             <input id="filter-manufacturer-makita" type="checkbox" value="makita" name="makita-field"
                                 checked>
-                            <label for="filter-manufacturer-makita">Makita</label>
+                            <label class="filter-manufacturer-type" for="filter-manufacturer-makita">Makita</label>
                         </li>
                         <li>
                             <input id="filter-manufacturer-dewalt" type="checkbox" value="dewalt" name="dewalt-field">
-                            <label for="filter-manufacturer-dewalt">Dewalt</label>
+                            <label class="filter-manufacturer-type" for="filter-manufacturer-dewalt">Dewalt</label>
                         </li>
                         <li>
 
                             <input id="filter-manufacturer-hitachi" type="checkbox" value="hitachi"
                                 name="hitachi-field">
-                            <label for="filter-manufacturer-hitachi">Hitachi</label>
+                            <label class="filter-manufacturer-type" for="filter-manufacturer-hitachi">Hitachi</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -124,11 +124,11 @@
                     <ul class="catalog-filter-power-list">
                         <li>
                             <input id="filter-power-akk" type="radio" name="power" value="akk" checked>
-                            <label for="filter-power-akk">Аккумуляторные</label>
+                            <label class="filter-manufacturer-type" for="filter-power-akk">Аккумуляторные</label>
                         </li>
                         <li>
                             <input id="filter-power-set" type="radio" name="power" value="set">
-                            <label for="filter-power-set">Сетевые</label>
+                            <label class="filter-manufacturer-type" for="filter-power-set">Сетевые</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -282,9 +282,9 @@
             <p>&copy; 2010-2019 Компания "Техномарт"<br>
                 Все права защищены</p>
 
-            <div class="social-list">
+            <div class="social">
                 <h2 class="visually-hidden">Социальные сети</h2>
-                <ul>
+                <ul class="social-list">
                     <li>
                         <a href="#" aria-label="Ссылка на группу вконтакте">
                             <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
