@@ -36,12 +36,12 @@
         и&nbsp;инструментов для ремонта
       </h1>
       <address class="header-address">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
       <div class="user-block user-block-unlogged">
-        <a href="">Войти</a>
-        <a href="">Регистрация</a>
+        <a class="login" href="">Войти</a>
+        <a class="signup" href="">Регистрация</a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -61,54 +61,56 @@
   <main>
     <div class="container">
       <section class="category">
-        <p class="category-item category-item-material">
-          Материалы
+        <div class="category-item category-item-material">
+          <b>Материалы</b>
           <a class="button category-button" href="">На любой вкус</a>
-        </p>
-        <p class="category-item category-item-tool">
-          Инстурмент
+        </div>
+        <div class="category-item category-item-tool">
+          <b>Инструмент</b>
           <a class="button category-button" href="">На все случаи</a>
-        </p>
-        <p class="category-item category-item-equipment">
-          Техника
+        </div>
+        <div class="category-item category-item-equipment">
+          <b>Техника</b>
           <a class="button category-button" href="">Для стройки</a>
-        </p>
+        </div>
 
         <div class="slider">
-          <div>
-            <div class="slider-pic slider-perforator">
+          <ul class="slider-list">
+            <li class="slider-pic slider-perforator slide-current">
               <h2 class="slider-title">Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a class="button open-catalog-button" href="catalog.html">Открыть каталог</a>
-            </div>
-            <div class="slider-pic slider-drill">
+            </li>
+            <li class="slider-pic slider-drill">
               <h2 class="slider-title">Дрели</h2>
               <p>Соседям на радость</p>
               <a class="button open-catalog-button" href="catalog.html">Открыть каталог</a>
-            </div>
-          </div>
+            </li>
+          </ul>
 
-          <div class="visually-hidden">
-            <div>
-              <!--Пока оставляю содержимое кнопки, уберу после применения стилей-->
+          <div class="slider-controls">
+
+            <div class="slider-controls-point">
               <button type="button" class="slider-point-button" aria-label="к предыдущему слайду"></button>
-              <button type="button" class="slider-point-button" aria-label="к следующему слайду"></button>
+              <button type="button" class="slider-point-button current-point-button" aria-label="к следующему слайду"></button>
             </div>
 
-            <!--Пока оставляю содержимое кнопки, уберу после применения стилей-->
-            <button type="button" class="slider-left-button" aria-label="Вправо"></button>
-            <button type="button" class="slider-left-button" aria-label="Влево"></button>
+            <button type="button" class="slider-arrow-button slider-left-button" aria-label="Влево"></button>
+            <button type="button" class="slider-arrow-button slider-right-button" aria-label="Вправо"></button>
+
           </div>
+
+
         </div>
 
-        <p class="category-item category-item-sale">
-          Скидки 50%
+        <div class="category-item category-item-sale">
+          <b>Скидки 50%</b>
           <a class="button category-button" href="">На 350 товаров</a>
-        </p>
-        <p class="category-item category-item-delivery">
-          Доставка
+        </div>
+        <div class="category-item category-item-delivery">
+          <b>Доставка</b>
           <a class="button category-button" href="">Бесплатно</a>
-        </p>
+        </div>
       </section>
 
       <section class="popular popular-item">
@@ -151,42 +153,50 @@
         <ul class="popular-manufacturer-list">
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/bosch.png" width="220" height="145" alt="Логотип производителя BOSCH">
+              <img class="popular-manufacturer-logo" src="img/bosch.png" width="220" height="145"
+                alt="Логотип производителя BOSCH">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/makita.png" width="220" height="145" alt="Логотип производителя Makita">
+              <img class="popular-manufacturer-logo" src="img/makita.png" width="220" height="145"
+                alt="Логотип производителя Makita">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/dewalt.png" width="220" height="145" alt="Логотип производителя DeWalt">
+              <img class="popular-manufacturer-logo" src="img/dewalt.png" width="220" height="145"
+                alt="Логотип производителя DeWalt">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/interskol.png" width="220" height="145" alt="Логотип производителя Интерскол">
+              <img class="popular-manufacturer-logo" src="img/interskol.png" width="220" height="145"
+                alt="Логотип производителя Интерскол">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/hitachi.png" width="220" height="145" alt="Логотип производителя HITACHI">
+              <img class="popular-manufacturer-logo" src="img/hitachi.png" width="220" height="145"
+                alt="Логотип производителя HITACHI">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/lg.png" width="220" height="145" alt="Логотип производителя LG">
+              <img class="popular-manufacturer-logo" src="img/lg.png" width="220" height="145"
+                alt="Логотип производителя LG">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/aeg.png" width="220" height="145" alt="Логотип производителя AEG">
+              <img class="popular-manufacturer-logo" src="img/aeg.png" width="220" height="145"
+                alt="Логотип производителя AEG">
             </a>
           </li>
           <li>
             <a href="">
-              <img class="popular-manufacturer-logo" src="img/metabo.png" width="220" height="145" alt="Логотип производителя metabo">
+              <img class="popular-manufacturer-logo" src="img/metabo.png" width="220" height="145"
+                alt="Логотип производителя metabo">
             </a>
           </li>
         </ul>
@@ -209,14 +219,14 @@
             <li><button class="service-button" type="button">Кредит</button></li>
           </ul>
           <ul class="service-detailed-list">
-            <li>
+            <li class="service-detailed-delivery">
               <h2 class="block-title service-title">Доставка</h2>
               <p class="service-description">
                 Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!
                 Ведь&nbsp;мы&nbsp;неплохо заработаем,<br>поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="visually-hidden">
+            <li class="service-detailed-guarantee visually-hidden">
               <h2 class="block-title service-title">Гарантия</h2>
               <p class="service-description">
                 Если купленный у нас товар поломается или заискрит,
@@ -226,12 +236,13 @@
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="visually-hidden">
+            <li class="service-detailed-credit visually-hidden">
               <h2 class="block-title service-title">Кредит</h2>
               <p class="service-description">
                 Залезть в долговую яму стало проще!
                 Кредитные&nbsp;вконсультанты придут вам на помощь.
               </p>
+              <button class="button credit-button" type="button">Отправить заявку</button>
             </li>
           </ul>
         </div>
@@ -283,7 +294,7 @@
             <img src="img/logo_technomart.svg" width="138" height="23" alt="Логотип сайта магазина Техномарт">
           </a>
           <address class="footer-address">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная,д. 19/8</p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </address>
         </div>
@@ -342,11 +353,11 @@
           </li>
         </ul>
 
-        <p class="feedback">Обратная связь: 
+        <p class="feedback">Обратная связь:
           <a href="">mail@htmlacademy.ru</a>
         </p>
 
-        <p class="developer">Разработано - 
+        <p class="developer">Разработано -
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
 
@@ -356,32 +367,39 @@
 
   <div class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru/courses" method="POST">
-      <label>
-        Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия" required>
-      </label>
-      <label>
-        Ваш e-mail:
-        <input type="email" name="email" placeholder="email@example.com" required>
-      </label>
-      <br>
-      <label>
-        Текст письма:
-        <textarea name="text-message" placeholder="В свободной форме" required></textarea>
-      </label>
-      <button type="submit">Отправить</button>
+    <button class="button-close" type="button" aria-label="Закрыть"></button>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru/courses" method="POST">
+
+      <div class="write-us-top">
+        <div class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        </div>
+
+        <div class="write-us-item">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
+        </div>
+
+        <div class="write-us-item write-us-text">
+          <label for="write-us-message">Текст письма: </label>
+          <textarea id="write-us-message" name="text-message" placeholder="В свободной форме" required></textarea>
+        </div>
+      </div>
+
+      <div class="modal-bottom write-us-bottom">
+        <button class="button write-us-button" type="submit">Отправить</button>
+      </div>
+
     </form>
-    <!--Пока оставляю содержимое кнопки ("Закрыть"), уберу после применения стилей-->
-    <button type="button" aria-label="Закрыть">Закрыть</button>
   </div>
 
   <div class="modal modal-map">
+    <button class="button-close" type="button" aria-label="Закрыть"></button>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1162.9200147702647!2d30.322769353349916!3d59.93850159407343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1590234269435!5m2!1sru!2sru"
       width="943" height="449" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <!--Пока оставляю содержимое кнопки ("Закрыть"), уберу после применения стилей-->
-    <button type="button" aria-label="Закрыть">Закрыть</button>
   </div>
 
 </body>

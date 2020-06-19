@@ -37,14 +37,14 @@
             </p>
 
             <address class="header-address">
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </address>
 
             <div class="user-block user-block-logged">
                 <p>
-                    <a href="">Равшан Джамшутович</a>
-                    <a href="" aria-label="Выход из личного кабинета"></a>
+                    <a class="user-name" href="">Равшан Джамшутович</a>
+                    <a class="logout" href="" aria-label="Выход из личного кабинета"></a>
                 </p>
                 <ul class="user-nav">
                     <li><a href="">Мои заказы</a></li>
@@ -68,14 +68,13 @@
     <main>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
-                <li><a>Каталог</a></li>
-                <li><a href="">Инструмент</a></li>
+                <li class="first-maker"><a href="index.html" aria-label="Главная"></a></li>
+                <li class="next-maker"><a>Каталог</a></li>
+                <li class="next-maker"><a href="">Инструмент</a></li>
                 <li><a href="">Перфораторы</a></li>
             </ul>
 
             <h1 class="block-title catalog-title">Перфораторы</h1>
-
 
             <section class="catalog">
                 <h2 class="visually-hidden">Список перфораторов</h2>
@@ -142,8 +141,8 @@
                         <li><a class="catalog-sorter-field" href="">По функционалу</a></li>
                     </ul>
                     <div class="catalog-arrows">
-                        <a href="" aria-label="По возрастанию"></a>
-                        <a href="" aria-label="По убыванию"></a>
+                        <a class="catalog-arrows-top" href="" aria-label="По возрастанию"></a>
+                        <a class="catalog-arrows-bottom" href="" aria-label="По убыванию"></a>
                     </div>
                 </div>
 
@@ -354,11 +353,12 @@
 
 
     <div class="modal modal-added-to-cart">
-        <!--Пока оставляю содержимое кнопки ("Закрыть"), уберу после применения стилей-->
-        <button type="button" aria-label="Закрыть">Закрыть</button>
-        <p>Товар добавлен в корзину</p>
-        <a href="">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
+        <button class="button-close" type="button" aria-label="Закрыть"></button>
+        <p>Товар добавлен в корзину!</p>
+        <div class="modal-bottom">
+            <a class="button order-button" href="">Оформить заказ</a>
+            <button class="button continue-button" type="button">Продолжить покупки</button>
+        </div>
     </div>
 
 </body>
