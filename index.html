@@ -20,8 +20,14 @@
           <img src="img/logo_technomart.svg" width="108" height="18" alt="Логотип сайта магазина Техномарт">
         </a>
         <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="GET">
-          <label for="search" class="visually-hidden">Поиск</label>
           <input id="search" type="search" name="search" placeholder="Поиск:">
+          <label for="search" class="search-icon">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                fill="currentColor" />
+            </svg>
+          </label>
         </form>
         <a class="header-bookmarks" href="">Закладки: 0</a>
         <a class="header-cart" href="">Корзина: 0</a>
@@ -45,13 +51,13 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a>Главная</a></li>
-          <li><a href="">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Спецпредложения</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
+          <li class="main-nav-item"><a>Главная</a></li>
+          <li class="main-nav-item"><a href="">Компания</a></li>
+          <li class="main-nav-item"><a href="catalog.html">Каталог</a></li>
+          <li class="main-nav-item"><a href="">Новости</a></li>
+          <li class="main-nav-item"><a href="">Спецпредложения</a></li>
+          <li class="main-nav-item"><a href="">Доставка</a></li>
+          <li class="main-nav-item"><a href="">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -61,16 +67,16 @@
   <main>
     <div class="container">
       <section class="category">
-        <div class="category-item category-item-material">
-          <b>Материалы</b>
+        <div class="category-item category-item-material new">
+          <b class="category-item-title">Материалы</b>
           <a class="button category-button" href="">На любой вкус</a>
         </div>
         <div class="category-item category-item-tool">
-          <b>Инструмент</b>
+          <b class="category-item-title">Инструмент</b>
           <a class="button category-button" href="">На все случаи</a>
         </div>
         <div class="category-item category-item-equipment">
-          <b>Техника</b>
+          <b class="category-item-title">Техника</b>
           <a class="button category-button" href="">Для стройки</a>
         </div>
 
@@ -87,35 +93,28 @@
               <a class="button open-catalog-button" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
-
-          <div class="slider-controls">
-
-            <div class="slider-controls-point">
-              <button type="button" class="slider-point-button" aria-label="к предыдущему слайду"></button>
-              <button type="button" class="slider-point-button current-point-button" aria-label="к следующему слайду"></button>
-            </div>
-
-            <button type="button" class="slider-arrow-button slider-left-button" aria-label="Влево"></button>
-            <button type="button" class="slider-arrow-button slider-right-button" aria-label="Вправо"></button>
-
+          <div class="slider-controls-point">
+            <button type="button" class="slider-point-button" aria-label="к предыдущему слайду"></button>
+            <button type="button" class="slider-point-button current-point-button"
+              aria-label="к следующему слайду"></button>
           </div>
-
-
+          <button type="button" class="slider-arrow-button slider-left-button" aria-label="Влево"></button>
+          <button type="button" class="slider-arrow-button slider-right-button" aria-label="Вправо"></button>
         </div>
 
         <div class="category-item category-item-sale">
-          <b>Скидки 50%</b>
+          <b class="category-item-title">Скидки 50%</b>
           <a class="button category-button" href="">На 350 товаров</a>
         </div>
         <div class="category-item category-item-delivery">
-          <b>Доставка</b>
+          <b class="category-item-title">Доставка</b>
           <a class="button category-button" href="">Бесплатно</a>
         </div>
       </section>
 
       <section class="popular popular-item">
-        <div class="popular-title">
-          <h2 class="block-title">Популярные товары:</h2>
+        <div class="popular-title-block">
+          <h2 class="block-title popular-title">Популярные товары:</h2>
           <a class="button popular-item-button" href="">Все популярные товары</a>
         </div>
         <ol class="popular-item-list">
@@ -124,30 +123,46 @@
             <img src="img/bosch_bfg_9000.jpg" width="218" height="158" alt="">
             <del class="catalog-item-old-price">30500 Р.</del>
             <p class="catalog-item-price">25500 Р.</p>
+            <div class="catalog-item-action">
+              <a class="button item-buy-button" href="">Купить</a>
+              <button class="button item-bookmarks-button" type="button">В закладки</button>
+          </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item new">
             <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
             <img src="img/bosch_bfg_3000.jpg" width="218" height="158" alt="">
             <del class="catalog-item-old-price">25500 Р.</del>
             <p class="catalog-item-price">15500 Р.</p>
+            <div class="catalog-item-action">
+              <a class="button item-buy-button" href="">Купить</a>
+              <button class="button item-bookmarks-button" type="button">В закладки</button>
+          </div>
           </li>
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             <img src="img/bosch_bfg_6000.jpg" width="218" height="158" alt="">
             <del class="catalog-item-old-price">30500 Р.</del>
             <p class="catalog-item-price">25500 Р.</p>
+            <div class="catalog-item-action">
+              <a class="button item-buy-button" href="">Купить</a>
+              <button class="button item-bookmarks-button" type="button">В закладки</button>
+          </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item new">
             <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
             <img src="img/bosch_bfg_3000.jpg" width="218" height="158" alt="">
             <p class="catalog-item-price">12500 Р.</p>
+            <div class="catalog-item-action">
+              <a class="button item-buy-button" href="">Купить</a>
+              <button class="button item-bookmarks-button" type="button">В закладки</button>
+          </div>
           </li>
         </ol>
       </section>
 
       <section class="popular popular-manufacturer">
-        <div class="popular-title">
-          <h2 class="block-title">Популярные производители:</h2>
+        <div class="popular-title-block">
+          <h2 class="block-title popular-title">Популярные производители:</h2>
           <a class="button popular-manufacturer-button" href="">Все производители</a>
         </div>
         <ul class="popular-manufacturer-list">
@@ -205,7 +220,7 @@
 
     <section class="service">
       <div class="container service-container">
-        <h2 class="block-title ">Сервисы</h2>
+        <h2 class="block-title service-title">Сервисы</h2>
         <p class="service-lead">
           Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -214,20 +229,20 @@
 
         <div class="service-detailed">
           <ul class="service-list">
-            <li><button class="service-button" type="button">Доставка</button></li>
+            <li><button class="service-button service-button-active" type="button">Доставка</button></li>
             <li><button class="service-button" type="button">Гарантия</button></li>
             <li><button class="service-button" type="button">Кредит</button></li>
           </ul>
           <ul class="service-detailed-list">
             <li class="service-detailed-delivery">
-              <h2 class="block-title service-title">Доставка</h2>
+              <h2 class="block-title service-subtitle">Доставка</h2>
               <p class="service-description">
                 Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!
                 Ведь&nbsp;мы&nbsp;неплохо заработаем,<br>поднимая его на ваш этаж!
               </p>
             </li>
             <li class="service-detailed-guarantee visually-hidden">
-              <h2 class="block-title service-title">Гарантия</h2>
+              <h2 class="block-title service-subtitle">Гарантия</h2>
               <p class="service-description">
                 Если купленный у нас товар поломается или заискрит,
                 а также в случае пожара, спровоцированного его
@@ -237,7 +252,7 @@
               </p>
             </li>
             <li class="service-detailed-credit visually-hidden">
-              <h2 class="block-title service-title">Кредит</h2>
+              <h2 class="block-title service-subtitle">Кредит</h2>
               <p class="service-description">
                 Залезть в долговую яму стало проще!
                 Кредитные&nbsp;вконсультанты придут вам на помощь.
@@ -290,7 +305,7 @@
 
         <div class="footer-top-left">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <a class="footer-logo">
+          <a class="logo footer-logo">
             <img src="img/logo_technomart.svg" width="138" height="23" alt="Логотип сайта магазина Техномарт">
           </a>
           <address class="footer-address">
@@ -364,6 +379,15 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal modal-added-to-cart">
+    <button class="button-close" type="button" aria-label="Закрыть"></button>
+    <p>Товар добавлен в корзину!</p>
+    <div class="modal-bottom">
+      <a class="button order-button" href="">Оформить заказ</a>
+      <button class="button continue-button" type="button">Продолжить покупки</button>
+    </div>
+  </div>
 
   <div class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
