@@ -22,11 +22,11 @@
                     <input id="search" type="search" name="search" placeholder="Поиск:">
                     <label for="search" class="search-icon">
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
-                            fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                                fill="currentColor" />
                         </svg>
-                      </label>
+                    </label>
                 </form>
                 <a class="header-bookmarks" href="">Закладки: 0</a>
                 <a class="header-cart header-cart-user" href="">Корзина: 10</a>
@@ -64,8 +64,8 @@
                     <li class="main-nav-item"><a>Каталог</a></li>
                     <li class="main-nav-item"><a href="">Новости</a></li>
                     <li class="main-nav-item"><a href="">Спецпредложения</a></li>
-                    <li  class="main-nav-item"><a href="">Доставка</a></li>
-                    <li  class="main-nav-item"><a href="">Контакты</a></li>
+                    <li class="main-nav-item"><a href="">Доставка</a></li>
+                    <li class="main-nav-item"><a href="">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,36 +86,53 @@
                 <h2 class="visually-hidden">Список перфораторов</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/courses" method="GET">
                     <h2 class="catalog-filter-title">Фильтр:</h2>
-                    <div>
-                        <h3>Цена:</h3>
-                    </div>
+
                     <fieldset class="catalog-filter-group">
-                        <legend class="catalog-filter-subtitle">Производители:</legend>
+                        <legend class="catalog-filter-subtitle">Цена:</legend>
+                        <div class="catalog-range-filter">
+                            <div class="catalog-range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0"></div>
+                                <div class="toggle toggle-max" tabindex="0"></div>
+                            </div>
+                            <div class="catalog-price-controls">
+                                <label class="visually-hidden" for="min-price-controls">от</label>
+                                <input class="min-price" id="min-price-controls" type="number" name="min-price" value="0">
+                                <span>—</span>
+                                <label class="visually-hidden" for="max-price-controls">до</label>
+                                <input class="max-price" id="max-price-controls" type="number" name="max-price" value="30000">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-subtitle filter-subtitle-manufacturer">Производители:</legend>
                         <ul class="catalog-filter-manufacturer-list">
-                            <li>
-                                <input id="filter-manufacturer-bosch" type="checkbox" value="bosch" name="bosch-field"
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-checkbox" id="filter-manufacturer-bosch" type="checkbox" value="bosch" name="bosch-field"
                                     checked>
                                 <label class="filter-manufacturer-type" for="filter-manufacturer-bosch">Bosch</label>
                             </li>
-                            <li>
-                                <input id="filter-manufacturer-interskol" type="checkbox" value="interskol"
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-checkbox" id="filter-manufacturer-interskol" type="checkbox" value="interskol"
                                     name="interskol-field">
                                 <label class="filter-manufacturer-type"
                                     for="filter-manufacturer-interskol">Интерскол</label>
                             </li>
-                            <li>
-                                <input id="filter-manufacturer-makita" type="checkbox" value="makita"
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-checkbox" id="filter-manufacturer-makita" type="checkbox" value="makita"
                                     name="makita-field" checked>
                                 <label class="filter-manufacturer-type" for="filter-manufacturer-makita">Makita</label>
                             </li>
-                            <li>
-                                <input id="filter-manufacturer-dewalt" type="checkbox" value="dewalt"
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-checkbox" id="filter-manufacturer-dewalt" type="checkbox" value="dewalt"
                                     name="dewalt-field">
                                 <label class="filter-manufacturer-type" for="filter-manufacturer-dewalt">Dewalt</label>
                             </li>
-                            <li>
-
-                                <input id="filter-manufacturer-hitachi" type="checkbox" value="hitachi"
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-checkbox" id="filter-manufacturer-hitachi" type="checkbox" value="hitachi"
                                     name="hitachi-field">
                                 <label class="filter-manufacturer-type"
                                     for="filter-manufacturer-hitachi">Hitachi</label>
@@ -124,19 +141,19 @@
                     </fieldset>
 
                     <fieldset class="catalog-filter-group">
-                        <legend class="catalog-filter-subtitle">Питание:</legend>
+                        <legend class="catalog-filter-subtitle filter-subtitle-power">Питание:</legend>
                         <ul class="catalog-filter-power-list">
-                            <li>
-                                <input id="filter-power-akk" type="radio" name="power" value="akk" checked>
-                                <label class="filter-manufacturer-type" for="filter-power-akk">Аккумуляторные</label>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-radio" id="filter-power-akk" type="radio" name="power" value="akk" checked>
+                                <label class="filter-power-type" for="filter-power-akk">Аккумуляторные</label>
                             </li>
-                            <li>
-                                <input id="filter-power-set" type="radio" name="power" value="set">
-                                <label class="filter-manufacturer-type" for="filter-power-set">Сетевые</label>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input-radio" id="filter-power-set" type="radio" name="power" value="set">
+                                <label class="filter-power-type" for="filter-power-set">Сетевые</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <button class="button catalog-filter-button" type="submit">Показать</button>
+                    <button class="catalog-button catalog-filter-button" type="submit">Показать</button>
                 </form>
 
                 <div class="catalog-sorter">
@@ -244,10 +261,10 @@
                     </li>
                 </ul>
                 <div class="pages">
-                    <a class="button pages-button pages-active">1</a>
-                    <a class="button pages-button" href="">2</a>
-                    <a class="button pages-button" href="">3</a>
-                    <a class="button pages-button" href="">Следующая</a>
+                    <a class="catalog-button pages-button pages-active">1</a>
+                    <a class="catalog-button pages-button" href="">2</a>
+                    <a class="catalog-button pages-button" href="">3</a>
+                    <a class="catalog-button pages-button" href="">Следующая</a>
                 </div>
             </section>
         </div>
